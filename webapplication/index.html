@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7c03175ad4.js" crossorigin="anonymous"></script>
     <title>VERSEX HOME</title>
     <style>
+       @import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+        
+        
         body{
             padding: 0;
             margin: 0;
+            
+            
         }
 
         
@@ -16,17 +22,18 @@
         .logo-nav{
             position: absolute;
             display: flex;
-            width: 80px
+            width: 300px;
+            padding-top: 10px;
 
         }
         
         ul{
             margin: 0;
-            color: purple;
+            
         }
         .main-header{
-            background-color: black;
-            padding-bottom: 75px;
+            background-color: #141a32;
+            padding-bottom: 50px;
             
         }
 
@@ -39,48 +46,620 @@
             
         }
 
+        .nav-home li:hover{
+            background: #711bdc;
+            transition: all 0.3s ease;
+        }
+
         .nav-home a{
             text-decoration: none;
-            color: purple;
+            color: white;
+            font-family: 'Iceland', cursive;
+            font-weight: bolder;
             padding: .3em;
             display: inline-block;
-            font-size: 20px;
-
+            font-size: 25px;
+            padding-top: 25px;
             
         }
 
-       
 
         .nav-home{
             text-align: center;
         }
         
-        /* Esse parte de navegacao tive que separar todos selectors*/
+        
+
+
+        @keyframes float{
+            0%{
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translateY(-30px);
+            }
+
+            100%{
+                transform: translateY(0px);
+            }
+
+        }
+
+
+        .btn-header{
+            background-color: transparent;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: 'Iceland', cursive;
+            font-size: 20px;
+            font-weight: bolder;
+            position: absolute;
+            top: 17px;
+            right: 20px;
+            width: 170px;
+            height: 50px;
+            border: solid #711bdc;
+            border-radius: 10px;
+            cursor: pointer;
+            outline: none;   
+        }
+
+
+        .btn-header:hover{
+            background: #711bdc;
+            transition: all 0.3s ease;
+        }
+
+
+        @media screen and (max-width: 960px){
+            .logo-nav{
+                position: absolute;
+                display: flex;
+                max-width: 1300px;
+            }
+
+            .nav-home a{
+                display: inline-block;
+                font-size: 17px;
+            }
+
+
+            .btn-header{
+                top: 30px;
+                width: 120px;
+            }
+        }
+       
+
+
+        /*Começo do main*/
+
+
+        .logo_da_main{
+            text-align: center;
+            display: block;
+            margin: 3%;
+            transform: translateY(0px);
+            animation: float 5s ease-in-out infinite;
+
+        }
+
+     
+
+        .section-1{
+            background-color: #f5f5f7;
+        }
+
+        .img-container{
+            display: inline-block;
+            position: relative;
+            
+           
+        }
+
+        .foto_1{
+            display: inline;
+            width: 500px;
+        }
+
+        .article-1{
+            float: right;
+            position: relative;
+            width: 43%;
+            padding: 0px 40px 0 0;
+            text-align: center;
+            margin-right: 20px;
+            font-family: 'Iceland', cursive;
+            font-size: 20px;
+
+        }
+
+        .title-article-1{
+            font-size: 50px;
+            color: #711bdc;
+        }
+
+        .sobre_a_versex{
+            color: #711bdc;
+        }
+
+        @media screen and(max-width: 960px){
+
+        }
+
+        .frase-1{
+            display: inline-block;
+            background-color: #711bdc;
+            border: none;
+            padding: 0%;
+            width: 100%;
+            font-family: 'Iceland', cursive;
+            text-align: center;
+            
+            
+           
+            
+        }
+
+        .h1-frase-1{
+            display: inline-block;
+            position: relative;
+            
+            color: #f5f5f7;
+            font-size: 50px;
+            text-align: center;
+            padding: 30px;
+            
+            
+            
+            
+
+        }
+
+        #qr-code-1{
+            float: right;
+            width: 120px;
+            border: solid 5px #2196F3;
+            margin-right: 60px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            padding: 0px;
+          
+            
+        }
+
+        .section-2{
+            background-color: #141a32;
+            background-size: cover;
+        }
+
+        vdi-container{
+            display: inline-block;
+            position: relative;
+           
+        }
+
+        .vdi{
+            display: inline;
+            border-radius: 20px;
+            width: 350px;
+            margin: 3%;
+            cursor: pointer;
+        }
+
+        .article-2{
+            float: right;
+            position: relative;
+            width: 43%;
+            padding: 0px 40px 0 0;
+            text-align: center;
+            margin-right: 20px;
+            font-family: 'Iceland', cursive;
+            font-size: 20px;
+
+        }
+
+
+        .title-article-2{
+            color: white;
+            font-size: 40px;
+        }
+
+        .sobre-realidade-aumentada{
+            color: #f5f5f7;
+        }
+
+
+        .frase-2{
+            display: inline-block;
+            background-color: #711bdc;
+            border: none;
+            padding: 0%;
+            width: 100%;
+            font-family: 'Iceland', cursive;
+            text-align: center;
+             
+        }
+
+
+      
+        
+        .h1-frase-2{
+            display: inline-block;
+            position: relative;
+            color: #f5f5f7;
+            font-size: 50px;
+            text-align: justify;
+            margin-left: 230px;
+            padding: 30px;
+            
+
+        }
+
+        #qr-code-2{
+            float: right;
+            width: 120px;
+            border: solid 5px #2196F3;
+            margin-right: 160px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+           
+          
+            
+        }
+
+        .img-investors{
+            display: inline-block;
+            top: 50%;
+            margin-left: 25%;
+            transform: translateY(0px);
+            
+            
+        }
+
+        .img-aria{
+            width: 300px;
+            padding: 30px;
+           
+        }
+
+        .img-nettoworks{
+            width: 200px;
+            padding: 30px;
+            float: right;
+           
+        }
+
+
+        .section-4{
+            background-color: #141a32;
+            background-size: cover;
+        }
+
+        .box{
+            position: relative;
+            align-items: center;
+            border-radius: 10px;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        fieldset{
+            border-radius: 15px;
+            border: 5px solid #711bdc;
+        }
+
+        legend{
+            text-align: center;
+            color: #f5f5f7;
+            font-family: 'Iceland', cursive;
+            font-size: 30px;
+        }
+
+        .input-field{
+            color: white;
+            font-size: 25px;
+            font-family: 'Iceland', cursive;
+
+        }
+
+
+        .input-user{
+            
+            color: ;
+            background: none;
+            font-family: 'Iceland', cursive;
+            font-size: 20px;
+            border: none;
+            border-bottom: 1px solid #711bdc;
+            outline: none;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+
+        .container{
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none; 
+            -ms-user-select: none; 
+            user-select: none;
+
+        }
+
+        .container input{
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+
+        .checkmark{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #711bdc;
+            border-radius: 5px;
+        }
+
+        .container:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+
+        /* When the checkbox is checked, add a blue background */
+        .container input:checked ~ .checkmark {
+            background-color: #2196F3;
+        }
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the checkmark when checked */
+        .container input:checked ~ .checkmark:after {
+            display: block;
+        }
+
+        /* Style the checkmark/indicator */
+        .container .checkmark:after {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+
+        #btn{
+            color: white;
+            width: 100%;
+            padding: 6px;
+            font-family: 'Iceland', cursive;
+            font-size: 20px;
+            border: solid 1px #711bdc;
+            border-radius: 7px;
+            cursor: pointer;
+            background-color: #141a32;
+        }
+
+        #btn:hover{
+            background-color: #711bdc;
+            transition: 03s ease;
+        }
+
+        .footer-main{
+            background-color: #711bdc;
+            background-size: cover;
+            display: block;
+            padding-bottom: 30px;
+            
+        }
+
+        .img-footer{
+            float: right;
+            width: 300px;
+            padding: 40px;
+        }
+
+        .footer-main ul{
+            margin: 0;
+            padding-top: 20px;
+            
+        }
+        
+
+        .footer-main li{
+            display: inline;
+        }
+
+        .footer-main a{
+            color: #f5f5f7;
+            display: inline-block;
+            font-family: 'Iceland', cursive;
+            font-weight: bolder;
+            font-size: 20px;
+            
+            text-decoration: none;
+            padding: .3em;
+        }
+
+
+    
+       
 
     </style>
 </head>
 <body>
     <header class="main-header">
+        <div>
+            <a href="index.html"><img src="images/logo-nav-home.png" alt="" class="logo-nav"></a>
+        </div>
         <nav class="nav-home" id="top"> 
-            <div>
-                <img src="/" alt="Logo" class="logo-nav">
-            </div>
                 <ul>
                     <li><a href="#top">SOBRE</a></li>
                     <li><a href="#middle" >REALIDADE AUMENTADA</a></li>
-                    <li><a href="footer">CLIENTES</a></li>
+                    <li><a href="footer">PARCEIROS</a></li>
                 </ul>
+                <button class="btn-header">Entre em contato!</button>
             </nav>
 
     </header>
     <main>
         <div class="logo_da_main" id="middle">
-            <img src="images/logo-main-home.jpg" alt="">
+            <img src="images/logo-roxa.png" alt="">
         </div>
-    </main>
-    <footer>
+        <section class="section-1">
+            <div class="img-container">
+                <img src="images/foto_versex.jpg" alt="" class="foto_1" id="middle">
+            
+            <article class="article-1">
+                    <h1 class="title-article-1">Quem Somos?</h1>
+                    <h3 class="sobre_a_versex">
+                        
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Eligendi blanditiis alias voluptatibus exercitationem, atque ullam dicta libero 
+                        maiores quisquam provident sequi nisi nam nobis excepturi reiciendis maxime soluta 
+                        vel odit.
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Eligendi blanditiis alias voluptatibus exercitationem, atque ullam dicta libero 
+                        maiores quisquam provident sequi nisi nam nobis excepturi reiciendis maxime soluta 
+                        vel odit.
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Eligendi blanditiis alias voluptatibus exercitationem, atque ullam dicta libero 
+                        maiores quisquam provident sequi nisi nam nobis excepturi reiciendis maxime soluta 
+                        vel odit.
+                    </h3>
+            </article>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="frase-1">
+                <h1 class="h1-frase-1">VENHA TRANSFORMAR O FUTURO DA SUA EMPRESA!</h1>
+                <img src="qrcodes/qr-code-home-aranha.png" alt=""  id="qr-code-1">
+            </div>
+          
+            <section class="section-2">
+                <div class="vdi-container">
+                    <video src="video/realidade_aumentada.mp4" class="vdi" autoplay muted loop></video>
+               
+                <article class="article-2"> 
+                    <h1 class="title-article-2">Como a realidade aumentada pode mudar o seu negocio!</h1>
+                    <h3 class="sobre-realidade-aumentada">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquid earum neque 
+                        recusandae itaque a, sunt voluptatem optio nesciunt porro nisi error 
+                        enim vel dignissimos aut hic quae voluptas tenetur.
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquid earum neque 
+                        recusandae itaque a, sunt voluptatem optio nesciunt porro nisi error 
+                        enim vel dignissimos aut hic quae voluptas tenetur.
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquid earum neque 
+                        recusandae itaque a, sunt voluptatem optio nesciunt porro nisi error 
+                        enim vel dignissimos aut hic quae voluptas tenetur.
+                    </h3>
+                </article>
+                </div>
+            </section>
+            <div class="frase-2">
+                <h1 class="h1-frase-2">PARCEIROS DA VERSEX!</h1>
+                <img src="qrcodes/qr-code-do-audi.png" alt=""  id="qr-code-2">
+            </div>
+            <section class="section-3">
+                <div class="img-investors">
+                    <a href="https://www.ariacapital.com.br/en/"  target="__blank"><img src="images/logo_aria.png" alt=""  class="img-aria"></a>
 
-    </footer>
-    
+                    <a href="https://www.youtube.com/watch?v=0zttj9Oeyek&t=7s" target="__blank"><img src="images/logonettoworks.png" alt="" class="img-nettoworks" ></a>
+                
+                </div>
+            </section>
+            <br>
+            <section class="section-4">
+                <div class="box">
+                    <form action="">
+                            <fieldset> 
+                                <legend>QUERO INSERIR A TECNOLOGIA NA MINHA EMPRESA</legend>
+                                <div class="input-field">
+                                    <label for="">Nome da empresa:</label>
+                                    <input type="text" class="input-user">
+                                </div>
+                                <br>
+                                <div class="input-field">
+                                    <label for="">Setor da empresa:</label>
+                                    <input type="text" class="input-user">
+                                </div>
+                                <br>
+                                <div class="input-field">
+                                    <label for="">WhatsApp:</label>
+                                    <input type="text" class="input-user">
+                                </div>
+                                <br>
+                                <div class="input-field">
+                                    <label for="">Qual é o nível de tech da sua empresa?</label>
+                                    <br>
+                                    <br>
+                                    <label for="baixo" class="container">Baixo
+                                        <input type="radio" id="baixo" name="avaliacao" value="baixo" class="input-user-radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <br>
+                                    <br>
+                                    <label for="medio" class="container">Medio
+                                        <input type="radio" id="medio" name="avaliacao" value="medio" class="input-user-radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <br>
+                                    <br>
+                                    <label for="alto" class="container">Alto
+                                        <input type="radio" id="alto" name="avaliacao" value="alto" class="input-user-radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="btn-button">
+                                    <input type="submit" name="" id="btn">
+                                </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-main">
+                <img src="images/logo-footer.png" alt="" class="img-footer">
+                <ul>
+                    <a href="https://www.instagram.com/versexperience/" target="__blank"><i class="fa-brands fa-instagram fa-fw"></i><li>INSTAGRAM</li></a>
+                    <br>
+                    <a href="/" target="__blank"><i class="fa-brands fa-discord fa-fw"></i><li>DISCORD</li></a>
+                    <br>
+                    <a href="/" target="__blank" ><i class="fa-brands fa-whatsapp fa-fw"></i><li>WHATSAPP</li></a>
+                </ul>
+                
+            </div>
+        </footer>
 </body>
 </html>
